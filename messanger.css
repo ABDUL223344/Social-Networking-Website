@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(64, 60, 247);
+    box-shadow: 0px 1px 3px rgb(29, 5, 116);
+    position: sticky;
+    top: 0px;
+}
+
+nav .nav-left, nav .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-left > img{
+    width: 60px;
+}
+
+nav .nav-left > input{
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #eee;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+nav .nav-middle{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+nav .nav-middle a{
+    text-decoration: none;
+    color: rgb(252, 242, 242);
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+nav .nav-middle a.active{
+    color: rgb(6, 6, 8);
+    position: relative;
+}
+
+nav .nav-middle a.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(14, 15, 17);
+}
+
+nav .nav-middle a > i{
+    font-size: 25px;
+}
+
+nav .nav-right .profile, .container .left-panel .profile{
+    background: url('./image/man.png');
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .nav-right{
+    cursor: pointer;
+    color: rgb(243, 243, 248);
+}
+
+nav .nav-right a{
+    text-decoration: none;
+    color: rgb(247, 17, 151);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+    margin-left: 1rem;
+}
+
+nav .nav-right a > i{
+    font-size: 18px;
+}
+
+.container{
+    background: #eee;
+    display: flex;
+}
+
+.container .left-panel{
+    background: rgb(153, 153, 173);
+}
+
+.container .left-panel{
+    width: 250px;
+}
+
+.container .left-panel ul{
+    padding: 10px 0px;
+}
+
+.container .left-panel ul li{
+    list-style: none;
+    display: flex;
+    padding: .7rem 1rem;
+    align-items: center;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container .left-panel ul li .name{
+    font-size: 40px;
+    color: rgb(252, 244, 244);
+    font-style:italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    
+ 
+.middle .new-chat{
+    padding-left: 300px;
+    padding-top: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(46, 9, 116);
+}
+
+.middle .place-holder{
+    padding-left: 290px;
+    
+}
+
+.middle .place-holder > input{
+    height: 250px;
+    width: 600px;
+    padding-left: 20px;
+    padding-bottom: 190px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(204, 197, 197);
+    margin-left: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(119, 119, 115);
+    
+}
+
+.middle .new-chat.p1>a{
+    padding-left: 600px;
+    font-style: italic;
+    color:rgb(136, 21, 243);
+    cursor: pointer;
+
+}
+
+.middle .new-chat .p1>b{
+    padding-left: 240px;
+    font-style: italic;
+    color: rgb(223, 9, 20);
+    cursor: pointer;
+
+}
+
+.middle .new-chat .p1>y{
+padding-left: 30px;
+color: rgb(59, 201, 15);
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
